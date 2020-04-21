@@ -1,0 +1,92 @@
+/* miniprogram/cart/reg/reg.wxss */
+.pageAll {
+    background-color: rgb(229, 230, 223);
+}
+.itemAll {
+    width: 98%;
+    margin: 8rpx;
+    border-radius: 5px;
+    background-color: white;
+    overflow:hidden;
+    /* display: flex;
+    justify-content:center;
+    margin: 15rpx;
+    text-align: center; */
+}
+.weui-cell__bd .buyinput{
+    position: absolute;
+    /* border:solid 1px rgb(226, 63, 63); */
+    /* float: right; */
+    right: 70rpx;
+    color: #999;
+}
+.item {
+  background-color: rgb(221, 211, 211);
+  border-radius: 5rpx;
+  width: 96%;
+  /* margin: 19rpx; */
+  margin: 16rpx auto;
+  padding: 5rpx;
+  /* border:solid 1px rgb(226, 63, 63); */
+}
+.goods {
+    display: flex;
+    font-size: small;
+    border-bottom: solid 1px white;
+    margin-left: 20rpx;
+    
+}
+ .textName {
+  padding-top: 5rpx;
+} 
+
+.nameblock {
+    display: flex;
+    justify-content: space-around;
+    height: 70rpx;
+}
+.nameInput {
+    border-bottom: solid 1px gainsboro;
+    width: 100%;
+   /*  height: 40rpx; */
+}
+.goodsInput {
+    margin-left: 20rpx;
+}
+.img1 {
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 5rpx;
+    margin-left: 15rpx;
+    /* border: 1px solid red; */
+} 
+.mycreate {
+    margin-left: 20rpx;
+}
+.create {
+    display: flex;
+    border-bottom: 1px solid gainsboro;
+}
+.arrow{
+width: 8px;
+ 
+height: 8px;
+ 
+border-top: 2px solid #999;
+ 
+border-right: 2px solid #999;
+ 
+position: absolute;
+ 
+right: 40rpx;
+ 
+transform: rotate(45deg);
+ 
+margin-top:10rpx;
+ 
+}
+.submit {
+    background-color: greenyellow;
+    font: bold;
+    border-radius: 10;
+}

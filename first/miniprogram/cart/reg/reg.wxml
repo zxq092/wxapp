@@ -1,0 +1,54 @@
+<!--miniprogram/cart/reg/reg.wxml-->
+<text>miniprogram/cart/reg/reg.wxml</text>
+<view class="nameblock">
+    <!-- <text class="name">姓名</text> -->
+    <input type="text" class="nameInput" placeholder="请输入姓名"/>
+</view>
+<view class="nameblock">
+    <!-- <text class="name">公司名称</text> -->
+    <input type="text" class="nameInput" placeholder="请输入公司名称"/>
+</view>
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{department}}">
+    <view class="weui-input">{{department[index]}}</view>
+</picker>
+
+<view class="create">
+    <image class="img1"  src='/image/22.png'></image> 
+    <text class="mycreate"> 我的创建 </text>  
+    <view class="arrow"></view>
+</view>
+
+<button class="submit" bind:tap="submitFunc" bindgetuserinfo="">提交</button>
+<view class="pageAll">
+    <text >团购商品</text>
+    <view class="itemAll">
+        <view class="item">
+            <view class="goods">
+                <text class="textName">商品名称</text>
+                <input type="text" class="goodsInput" placeholder="请输入商品名称"/>
+            </view>
+            <view class="goods">
+                <text class="textName">规格</text>
+                <input type="text" class="goodsInput" placeholder="尺寸、颜色等"/>
+            </view>
+            <view class="goods">
+                <text class="textName">价格(￥)</text>
+                <input type="number" class="goodsInput" placeholder="0.00"/>
+            </view>
+            <view class="goods">
+                <text class="textName">库存</text>
+                <input type="number" class="goodsInput" placeholder="不限"/>
+            </view>
+            <view class="goods">
+                <text class="textName">是否限制购买</text>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                        <view class="buyinput">{{array[index]}}</view>
+                    </picker>
+                </view>
+                <view class="arrow"></view>
+            </view>
+        </view>
+        <view class="addNewItem" style="margin: 8rpx; color:blue; font-size: small;" bind:tap="addNewItem">+ 添加新项目</view>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+<!--miniprogram/cart/entry/entry.wxml-->
+<!-- <text>miniprogram/cart/entry/entry.wxml</text>
+ -->
+<view wx:for="{{carts}}" wx:key="id">
+    <view class="foodItem" hover-class="none" hover-stop-propagation="false">
+
+        <view class="foodImage">
+            <image src="{{item.image}}"  class="img"/> 
+        </view>
+        <view class="plusSubText">
+
+            <view class="subSign" hidden="{{item.hiddenFlag}}" data-id="{{item.id}}" bind:tap="subAction">-</view>
+            <block >
+                <text class="num"  wx:if="{{!item.hiddenFlag}}" >{{item.num}}</text>
+                <text class="num"  wx:else="{{item.hiddenFlag}}" ></text>
+            </block>
+            <view class="plusSign" data-id="{{item.id}}" bind:tap="plusAction">+</view>
+        </view>
+        
+    </view>
+
+</view>
+
